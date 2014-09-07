@@ -6,16 +6,17 @@
 	margin:auto;
 	border:2px;
 }
+	.toplevel-block{
+		width:900px;
+		margin:auto;
+	}
+
 #header{
-	width:900px;
 	height:150px;
-	margin:auto;
 	padding-top:20px;
 
 }
 #nav{
-	width:900px;
-	margin:auto;
 }
 
 	.nav-item{
@@ -27,14 +28,10 @@
 	}
 
 #content{
-	width:900px;
 	height:450px;
-	margin:auto;
 	background:url(../images/content.jpg);
 }
 #footer{
-	width:900px;
 	height:100px;
-	margin:auto;
 	background:url(../images/footer.jpg);
 }
