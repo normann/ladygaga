@@ -13,7 +13,6 @@
 
 #header{
 	height:150px;
-	padding-top:20px;
 	background:url(../images/header.jpg);
 }
 #nav{
@@ -22,7 +21,6 @@
 	.nav-item{
 		width:225px;
 		height:100px;
-		padding-bottom:20px;
 		float:left;
 		margin:0px;
 	}
