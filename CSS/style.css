@@ -1,4 +1,11 @@
 
+
+.clearfix{
+	clear: both;
+	display: block;
+}
+
+
 body {
 	background:url(../images/background.jpg);
 }
