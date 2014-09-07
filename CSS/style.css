@@ -16,34 +16,15 @@
 #nav{
 	width:900px;
 }
-#school{
-	width:225px;
-	height:100px;
-	padding-bottom:20px;
-	float:left;
-	margin:0px;
-}
-#interests{
-	width:225px;
-	height:100px;
-	padding-bottom:20px;
-	float:left;
-	margin:0px;
-}
-#hobbies{
-	width:225px;
-	height:100px;
-	padding-bottom:20px;
-	float:left;
-	margin:0px;
-}
-#relations{
-	width:225px;
-	height:100px;
-	padding-bottom:20px;
-	float:left;
-	margin:0px;
-}
+
+	.nav-item{
+		width:225px;
+		height:100px;
+		padding-bottom:20px;
+		float:left;
+		margin:0px;
+	}
+	
 #content{
 	width:900px;
 	height:450px;
