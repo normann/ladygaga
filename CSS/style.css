@@ -5,17 +5,21 @@
 	display: block;
 }
 
-
 body {
 	background:url(../images/background.jpg);
+	background-repeat: repeat-x;
 }
+
 #container{
 	width:960px;
-	background-color:#909090;
 	margin:auto;
-	border:2px solid #658783;
 	padding: 20px 0;
+	background: -webkit-linear-gradient(145deg, #B0B0B0, #181818,#B0B0B0);
+	background: -o-linear-gradient(145deg, #B0B0B0, #181818,#B0B0B0);
+	background: -moz-linear-gradient(145deg, #B0B0B0, #181818,#B0B0B0);
+	background: linear-gradient (145deg, #B0B0B0, #181818,#B0B0B0);
 }
+
 	.toplevel-block{
 		width:900px;
 		margin:auto;
@@ -25,6 +29,7 @@ body {
 	height:150px;
 	background:url(../images/header.jpg);
 }
+
 #nav{
 }
 
@@ -39,6 +44,22 @@ body {
 	height:450px;
 	background:url(../images/content.jpg);
 }
+
+#homepage_house{
+	height:50px;
+	width:350px;
+	margin:auto;
+	position: relative;
+	top: 14px;
+}
+
+#main_text{
+	text-align:center;
+	height:auto;
+	width:700px;
+
+}
+
 #footer{
 	height:100px;
 	background:url(../images/footer.jpg);
