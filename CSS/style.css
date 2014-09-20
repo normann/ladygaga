@@ -50,7 +50,7 @@ body {
 					height: 100px;
 				}
 
-				#nav ul li a:hover div{
+				#nav ul li a:hover div, #nav ul li a:focus div{
 					background-position: 0 -100px;
 				}
 
