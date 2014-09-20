@@ -61,9 +61,16 @@ body {
 				#biography a div{
 					background:url("../images/hover over biography.gif");
 				}
+
 				#blog a div{
 					background:url("../images/hover over blog.gif");
 				}
+
+				#homepage a div{
+					background:url("../images/hover over homepage.gif");
+				}
+
+
 		
 #content{
 	height:450px;
