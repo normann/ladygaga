@@ -92,10 +92,7 @@ body {
 	background:url(../images/footer.jpg);
 }
 
-/*
-=========Home page style ============
-*/
-
+/*=========Home page style ============*/
 #home-sub-nav{
 	padding: 0 60px;
 	margin:30px 0 20px;
@@ -161,6 +158,60 @@ body {
 			visibility: visible;
 		}
 
-/*
-=========Home page style end============
-*/
+/*=========Home page style end============*/
+
+/*=========Blog page style============*/
+	#blog_text {
+		padding: 27px 50px 0;
+	}
+
+	#blog_text .blog-column{
+		display: inline-block;
+		width: 33%;
+	}
+
+		#blog_text .blog-column div.backgd-image{
+			width: 250px;
+			height: 325px;
+			margin: auto;
+			position: relative;
+		}
+
+		#blog_text .blog-column div.backgd-image div.text{
+			display: none;
+			color: #fff;
+			padding: 25px;
+			overflow-y: hidden;
+			max-height: 245px;
+			text-align: center;
+			line-height: 18px;
+		    font-size: 16px;
+		}
+
+		#blog_text .blog-column div.backgd-image:hover, #blog_text .blog-column div.backgd-image:focus{
+			background-position: 0 -325px;
+		}
+
+		#blog_text .blog-column div.backgd-image:hover div.text, #blog_text .blog-column div.backgd-image:focus div.text{
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+		}
+
+		#warcraft div.backgd-image{
+			background: url("../images/world of warcraft - blog.gif");
+		}
+
+		#titan div.backgd-image{
+			background: url("../images/attack on titan - blog.gif");
+		}
+
+		#league div.backgd-image{
+			background: url("../images/league of legends - blog.gif");
+		}
+
+
+/*=========Blog page style end============*/
+
