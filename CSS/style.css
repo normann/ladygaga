@@ -1,10 +1,4 @@
 
-
-.clearfix{
-	clear: both;
-	display: block;
-}
-
 body {
 	background:url(../images/background.jpg);
 	background-repeat: repeat-x;
@@ -31,15 +25,46 @@ body {
 }
 
 #nav{
+	display: table;
+	background:url("../images/chain navigation background.jpg");
 }
 
-	.nav-item{
-		width:225px;
-		height:100px;
-		float:left;
-		margin:0px;
+	#nav ul{
+		display: table-row;
 	}
+		#nav ul li {
+			display: table-cell;
+		}
 
+		#nav ul li.left a div{
+
+		}
+		#nav ul li.center a div{
+			margin: auto;
+		}
+		#nav ul li.right a div{
+			float: right;
+		}
+				#nav ul li a div{
+					width: 225px;
+					height: 100px;
+				}
+
+				#nav ul li a:hover div{
+					background-position: 0 -100px;
+				}
+
+				#education a div{
+					background:url("../images/hover over education.gif");
+				}
+
+				#biography a div{
+					background:url("../images/hover over biography.gif");
+				}
+				#blog a div{
+					background:url("../images/hover over blog.gif");
+				}
+		
 #content{
 	height:450px;
 	background:url(../images/content.jpg);
