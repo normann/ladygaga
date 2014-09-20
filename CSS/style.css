@@ -8,10 +8,6 @@ body {
 	width:960px;
 	margin:auto;
 	padding: 20px 0;
-	background: -webkit-linear-gradient(145deg, #B0B0B0, #181818,#B0B0B0);
-	background: -o-linear-gradient(145deg, #B0B0B0, #181818,#B0B0B0);
-	background: -moz-linear-gradient(145deg, #B0B0B0, #181818,#B0B0B0);
-	background: linear-gradient (145deg, #B0B0B0, #181818,#B0B0B0);
 }
 
 	.toplevel-block{
@@ -138,8 +134,7 @@ body {
 			-webkit-border-bottom-right-radius: 10px;
 			-moz-border-bottom-right-radius: 10px;
 			border-bottom-right-radius: 10px;
-			height: 243px;
-			width: 234;
+			height: 252px;
 			overflow: hidden;
 			position: absolute;
 			top: 155px;
