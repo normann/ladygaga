@@ -77,6 +77,12 @@ body {
 	background:url(../images/content.jpg);
 }
 
+#content.home-content
+{
+	height:450px;
+	background:url("../images/content with image - homepage.jpg");
+}
+
 #homepage_house{
 	height:50px;
 	width:350px;
