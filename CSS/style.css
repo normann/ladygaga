@@ -79,7 +79,7 @@ body {
 	background:url("../images/content with image - homepage.jpg");
 }
 
-#homepage_house{
+.identifier-holder{
 	height:50px;
 	width:350px;
 	margin:auto;
@@ -214,4 +214,23 @@ body {
 
 
 /*=========Blog page style end============*/
+
+/*=========Biography page style============*/
+#content img.left {
+	float: left;
+	padding: 0 20px 0 60px;
+}
+/*=========Biography page style end============*/
+
+#education_text p {
+	padding: 10px 50px 0;
+}
+
+	#education_text p img {
+		margin: auto;
+		display: block;
+		margin: 20px;
+	}
+
+
 
