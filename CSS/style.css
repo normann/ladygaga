@@ -92,6 +92,17 @@ body {
 	background:url(../images/footer.jpg);
 }
 
+#footer ul li{
+	display:inline-block;
+	padding-top:23px;
+	padding-left:20px;
+	margin:20px;
+}
+
+#footer ul li :hover{
+	color:#222;
+}
+
 /*=========Home page style ============*/
 #home-sub-nav{
 	padding: 0 60px;
