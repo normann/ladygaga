@@ -1,15 +1,6 @@
 figure { 
 	display: inline-block; 
 }
-a {
-	text-decoration: none;
-	border-bottom: 1px solid #bc9d88;
-	color: #8f6b51;
-}
-a:hover,
-a:focus {
-	border-bottom: 1px dashed #bc9d88;
-}
 
 #slideshow {
 	position: relative;
@@ -34,7 +25,6 @@ a:focus {
 	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
 }
 
-/* avanced box-shadow : http://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow */
 #slideshow:before,
 #slideshow:after {
 	position: absolute;
@@ -55,6 +45,7 @@ a:focus {
 	
 	z-index: -10;
 }
+
 #slideshow:before {
 	left:0;
 	-webkit-transform: rotate(-4deg);
@@ -76,7 +67,7 @@ a:focus {
 	height: 310px;
 	overflow: hidden;
 }
-/* timeline base */
+
 #slideshow .container:after {
 	position:absolute;
 	bottom: 0; left:0;
@@ -111,11 +102,10 @@ a:focus {
 	width: 400%;
 	height: 310px;
 	
-	-webkit-animation: slider 32s infinite;
-	-moz-animation: slider 32s infinite;
-	animation: slider 32s infinite;
+	-webkit-animation: slider 20s infinite;
+	-moz-animation: slider 20s infinite;
+	animation: slider 20s infinite;
 }
-
 
 #slideshow figure {
 	position:relative;
@@ -134,6 +124,7 @@ a:focus {
 	0%, 25%, 50%, 75%, 100%						{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
 	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; }
 }
+
 #slideshow figure:after {
 	position: absolute;
 	display:block;
@@ -144,9 +135,9 @@ a:focus {
 	-moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
 	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
 	
-	-webkit-animation: figurer 32s infinite;
-	-moz-animation: figurer 32s infinite;
-	animation: figurer 32s infinite;
+	-webkit-animation: figurer 20s infinite;
+	-moz-animation: figurer 20s infinite;
+	animation: figurer 20s infinite;
 }
 
 @-webkit-keyframes figcaptionner {
@@ -176,23 +167,9 @@ a:focus {
 	color: #555;
 	text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
 	
-	-webkit-animation: figcaptionner 32s infinite;
-	-moz-animation: figcaptionner 32s infinite;
-	animation: figcaptionner 32s infinite;
+	-webkit-animation: figcaptionner 20s infinite;
+	-moz-animation: figcaptionner 20s infinite;
+	animation: figcaptionner 20s infinite;
 }
 
-@-webkit-keyframes timeliner {
-	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
-	20%, 45%, 70%, 90%		{ width: 640px;	}
-}
-@-moz-keyframes timeliner {
-	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
-	20%, 45%, 70%, 90%		{ width: 640px;	}
-}
-@keyframes timeliner {
-	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
-	20%, 45%, 70%, 90%		{ width: 640px;	}
-}
-
-/* need a stop ! */
 
