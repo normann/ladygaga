@@ -1,0 +1,170 @@
+figure { 
+	display: inline-block; 
+}
+
+#slideshow {
+	position: relative;
+	width: 700px;
+	height: 200px;
+	padding: 10px;
+	border: 1px solid #bbb;
+	margin: 20px auto 10px;
+	background: #FFF;
+	background: -webkit-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
+	background: -moz-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
+	background: -ms-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
+	background: -o-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
+	background: linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
+	
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+}
+
+#slideshow:before,
+#slideshow:after {
+	position: absolute;
+	display:block;
+	bottom:23px;
+	width: 57%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	
+	-webkit-border-radius: 30%;
+	-moz-border-radius: 30%;
+	border-radius: 30%;
+	
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+
+#slideshow:before {
+	left:16px;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+}
+#slideshow:after {
+	right:16px;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+}
+
+#slideshow .container {
+	position:relative;
+	width: 700px;
+	height: 200px;
+	overflow: hidden;
+	z-index: 10;
+}
+
+#slideshow .container:after {
+	position:absolute;
+	bottom: 0; left:0;
+	content: " ";
+	background: #999;
+	width: 100%;
+	height: 1px;
+}
+
+@-webkit-keyframes slider {
+	0%, 30%, 100%	{ left: 0 }
+	33%, 63%		{ left: -100% }
+	67%, 97%		{ left: -200% }
+}
+@-moz-keyframes slider {
+	0%, 30%, 100%	{ left: 0 }
+	33%, 63%		{ left: -100% }
+	67%, 97%		{ left: -200% }
+}
+@keyframes slider {
+	0%, 30%, 100%	{ left: 0 }
+	33%, 63%		{ left: -100% }
+	67%, 97%		{ left: -200% }
+}
+
+#slideshow .slider {
+	position: absolute;
+	left:0; top:0;
+	width: 300%;
+	height: 200px;
+	
+	-webkit-animation: slider 15s infinite;
+	-moz-animation: slider 15s infinite;
+	animation: slider 15s infinite;
+}
+
+#slideshow figure {
+	position:relative;
+	padding:0; margin:0;
+}
+
+@-webkit-keyframes figurer {
+	0%, 33%, 67%, 100%			{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
+	4%, 29%, 37%, 63%, 71%, 96%	{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; }
+}
+@-moz-keyframes figurer {
+	0%, 33%, 67%, 100%			{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
+	4%, 29%, 37%, 63%, 71%, 96%	{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; }
+}
+@keyframes figurer {
+	0%, 33%, 67%, 100%			{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
+	4%, 29%, 37%, 63%, 71%, 96%	{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; }
+}
+
+#slideshow figure:after {
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+	-webkit-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+	-moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+	
+	-webkit-animation: figurer 15s infinite;
+	-moz-animation: figurer 15s infinite;
+	animation: figurer 15s infinite;
+}
+
+@-webkit-keyframes figcaptionner {
+	0%, 33%, 67%, 100%			{ bottom: -55px;	}
+	4%, 29%, 37%, 63%, 71%, 96%	{ bottom: 5px;		}
+}
+@-moz-keyframes figcaptionner {
+	0%, 33%, 67%, 100%			{ bottom: -55px;	}
+	4%, 29%, 37%, 63%, 71%, 96%	{ bottom: 5px;		}
+}
+@keyframes figcaptionner {
+	0%, 33%, 67%, 100%			{ bottom: -55px;	}
+	4%, 29%, 37%, 63%, 71%, 96%	{ bottom: 5px;		}
+}
+
+#slideshow figcaption {
+	position:absolute;
+	padding: 10px 20px; margin:0;
+	left:0; right:0; bottom: 5px;
+	text-align:center;
+	letter-spacing: 0.05em;
+	word-spacing: 0.05em;
+	font-family: Georgia, Times, serif;
+	background: #000;
+	background: rgba(255,255,255,0.6);
+	border-top: 1px solid rgb(225,225,225);
+	color: #111;
+	text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
+	
+	-webkit-animation: figcaptionner 15s infinite;
+	-moz-animation: figcaptionner 15s infinite;
+	animation: figcaptionner 15s infinite;
+}
+

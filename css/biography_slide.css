@@ -1,0 +1,177 @@
+figure { 
+	display: inline-block; 
+}
+
+#slideshow {
+	position: relative;
+	width: 300px;
+	height: 280px;
+	padding: 10px;
+	border: 1px solid #EEE;
+	margin: 20px;
+	float: left;
+	background: #FFF;
+	background: -webkit-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
+	background: -moz-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
+	background: -ms-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
+	background: -o-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
+	background: linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
+	
+	-webkit-border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+}
+
+#slideshow:before,
+#slideshow:after {
+	position: absolute;
+	display:block;
+	bottom:35px;
+	width: 55%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	
+	-webkit-border-radius: 30%;
+	-moz-border-radius: 30%;
+	border-radius: 30%;
+	
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 30px 10px rgba(0,0,0, 0.7);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 30px 10px rgba(0,0,0, 0.7);
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 30px 10px rgba(0,0,0, 0.7);
+}
+
+#slideshow:before {
+	left:16px;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+}
+#slideshow:after {
+	right:16px;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+}
+
+#slideshow .container {
+	position:relative;
+	width: 300px;
+	height: 280px;
+	overflow: hidden;
+	z-index: 10;
+}
+
+#slideshow .container:after {
+	position:absolute;
+	bottom: 0; left:0;
+	content: " ";
+	background: #999;
+	width: 100%;
+	height: 1px;
+}
+
+@-webkit-keyframes slider {
+	0%, 17%, 100%	{ left: 0 }
+	20%, 37%		{ left: -100% }
+	40%, 57%		{ left: -200% }
+	60%, 77%		{ left: -300% }
+	80%, 97%		{ left: -400% }
+}
+@-moz-keyframes slider {
+	0%, 17%, 100%	{ left: 0 }
+	20%, 37%		{ left: -100% }
+	40%, 57%		{ left: -200% }
+	60%, 77%		{ left: -300% }
+	80%, 97%		{ left: -400% }
+}
+@keyframes slider {
+	0%, 17%, 100%	{ left: 0 }
+	20%, 37%		{ left: -100% }
+	40%, 57%		{ left: -200% }
+	60%, 77%		{ left: -300% }
+	80%, 97%		{ left: -400% }
+}
+
+#slideshow .slider {
+	position: absolute;
+	left:0; top:0;
+	width: 500%;
+	height: 280px;
+	
+	-webkit-animation: slider 25s infinite;
+	-moz-animation: slider 25s infinite;
+	animation: slider 25s infinite;
+}
+
+#slideshow figure {
+	position:relative;
+	padding:0; margin:0;
+}
+
+@-webkit-keyframes figurer {
+	0%, 20%, 40%, 60%, 80%, 100%				{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%	{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; }
+}
+@-moz-keyframes figurer {
+	0%, 20%, 40%, 60%, 80%, 100%				{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%	{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; }
+}
+@keyframes figurer {
+	0%, 20%, 40%, 60%, 80%, 100%				{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%	{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; }
+}
+
+#slideshow figure:after {
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+	-webkit-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+	-moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+	
+	-webkit-animation: figurer 25s infinite;
+	-moz-animation: figurer 25s infinite;
+	animation: figurer 25s infinite;
+}
+
+@-webkit-keyframes figcaptionner {
+	0%, 20%, 40%, 60%, 80%, 100%					{ bottom: -55px;}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%	{ bottom: 5px;}
+}
+@-moz-keyframes figcaptionner {
+	0%, 20%, 40%, 60%, 80%, 100%					{ bottom: -55px;}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%	{ bottom: 5px;}
+}
+@keyframes figcaptionner {
+	0%, 20%, 40%, 60%, 80%, 100%					{ bottom: -55px;}
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%	{ bottom: 5px;}
+}
+
+#slideshow figcaption {
+	position:absolute;
+	padding: 7px 20px; margin:0;
+	left:0; right:0; bottom: 5px;
+	text-align:center;
+	letter-spacing: 0.05em;
+	word-spacing: 0.05em;
+	font-family: Georgia, Times, serif;
+	background: #000;
+	background: rgba(255,255,255,0.6);
+	border-top: 1px solid rgb(225,225,225);
+	color: #111;
+	text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
+	
+	-webkit-animation: figcaptionner 25s infinite;
+	-moz-animation: figcaptionner 25s infinite;
+	animation: figcaptionner 25s infinite;
+}
+

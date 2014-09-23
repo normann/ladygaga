@@ -99,7 +99,11 @@ body {
 	margin:20px;
 }
 
-#footer ul li :hover{
+#footer ul li a{
+	color: #000;
+}
+
+#footer ul li a:hover{
 	color:#222;
 }
 
@@ -223,25 +227,22 @@ body {
 			background: url("../images/league of legends - blog.gif");
 		}
 
-
 /*=========Blog page style end============*/
 
 /*=========Biography page style============*/
-#content img.left {
-	float: left;
-	padding: 0 20px 0 60px;
-}
+
 /*=========Biography page style end============*/
 
-#education_text p {
-	padding: 10px 50px 0;
+#biography_text {
+	padding: 20px 50px;
 }
 
-	#education_text p img {
-		margin: auto;
-		display: block;
-		margin: 20px;
-	}
+/*=========Education page style============*/
+
+/*=========Education page style end============*/
+#education_text {
+	padding: 20px 50px;
+}
 
 
 
