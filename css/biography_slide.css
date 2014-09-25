@@ -1,4 +1,4 @@
-figure { /* jkdcadskfdnsfn */
+figure { /* links figure to html div */
 	display: inline-block; 
 }
 
@@ -11,50 +11,50 @@ figure { /* jkdcadskfdnsfn */
 	margin: 20px;
 	float: left;
 	background: #FFF;
-	background: -webkit-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF); /* jkdcadskfdnsfn */
+	background: -webkit-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF); /* adds gradient */
 	background: -moz-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
 	background: -ms-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
 	background: -o-linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
 	background: linear-gradient(#DDD, #DDD 20%, #EEE 80%, #FFF);
 	
-	-webkit-border-radius: 2px 2px 2px 2px; /* jkdcadskfdnsfn */
+	-webkit-border-radius: 2px 2px 2px 2px; /* adds slight rounded borders to all corners of slideshow div */
 	-moz-border-radius: 2px 2px 2px 2px;
 	border-radius: 2px 2px 2px 2px;
 	
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.2); /* jkdcadskfdnsfn */
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.2); /* adds black box shadow with gradient with opacity */
 	-moz-box-shadow: 0 0 3px rgba(0,0,0, 0.2);
 	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
 }
 
-#slideshow:before, /* jkdcadskfdnsfn */
-#slideshow:after { /* jkdcadskfdnsfn */
+#slideshow:before, /* creates element before the first child elements of slideshow */
+#slideshow:after { /* creates element after the last child elements of slideshow */
 	position: absolute;
-	display:block; /* jkdcadskfdnsfn */
+	display:block; /* gives property of block */
 	bottom:35px;
-	width: 55%; /* jkdcadskfdnsfn */
+	width: 55%; /* sets width to 55 percent of related container */
 	height: 20px;
-	content: " "; /* jkdcadskfdnsfn */
-	background: rgba(0,0,0,0.1); /* jkdcadskfdnsfn */
+	content: " "; /* has no content */
+	background: rgba(0,0,0,0.1); /* black with slight opacity */
 	
-	-webkit-border-radius: 30%; /* jkdcadskfdnsfn */
+	-webkit-border-radius: 30%; /* gives a rounded border */
 	-moz-border-radius: 30%;
 	border-radius: 30%;
 	
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 30px 10px rgba(0,0,0, 0.7); /* jkdcadskfdnsfn */
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 30px 10px rgba(0,0,0, 0.7); /* gives a black box shadow with increasing opacity */
 	-moz-box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 30px 10px rgba(0,0,0, 0.7);
 	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 30px 10px rgba(0,0,0, 0.7);
 }
 
 #slideshow:before {
-	left:16px; /* jkdcadskfdnsfn */
-	-webkit-transform: rotate(-3deg); /* jkdcadskfdnsfn */
+	left:16px; /* gives absolute position to the left 16 px */
+	-webkit-transform: rotate(-3deg); /* rotates slightly by 3 degrees anti clockwise */
 	-moz-transform: rotate(-3deg);
 	-ms-transform: rotate(-3deg);
 	-o-transform: rotate(-3deg);
 }
 #slideshow:after {
-	right:16px; /* jkdcadskfdnsfn */
-	-webkit-transform: rotate(3deg); /* jkdcadskfdnsfn */
+	right:16px; /* gives absolute position to the right 16 px */
+	-webkit-transform: rotate(3deg);  /* rotates slightly by 3 degrees clockwise */
 	-moz-transform: rotate(3deg);
 	-ms-transform: rotate(3deg);
 	-o-transform: rotate(3deg);
@@ -65,24 +65,24 @@ figure { /* jkdcadskfdnsfn */
 	width: 300px;
 	height: 280px;
 	overflow: hidden;
-	z-index: 10; /* jkdcadskfdnsfn */
+	z-index: 10; /* the index layer of 10 in z axis */
 }
 
-#slideshow .container:after { /* jkdcadskfdnsfn */
+#slideshow .container:after { /* gives a bottom stand for images */
 	position:absolute;
-	bottom: 0; left:0; /* jkdcadskfdnsfn */
+	bottom: 0; left:0;
 	content: " ";
-	background: #999; /* jkdcadskfdnsfn */
-	width: 100%; /* jkdcadskfdnsfn */
+	background: #999;
+	width: 100%;
 	height: 1px;
 }
 
-@-webkit-keyframes slider { /* jkdcadskfdnsfn */
-	0%, 17%, 100%	{ left: 0 } /* jkdcadskfdnsfn */
-	20%, 37%		{ left: -100% } /* jkdcadskfdnsfn */
+@-webkit-keyframes slider { /* defines a key frame called 'silder' with sliding effect, which will be applied to .slider element */
+	0%, 17%, 100%	{ left: 0 } /* initial position */
+	20%, 37%		{ left: -100% } /* 20 percent position */
 	40%, 57%		{ left: -200% }
 	60%, 77%		{ left: -300% }
-	80%, 97%		{ left: -400% }
+	80%, 97%		{ left: -400% } /* last slide position before going back to initial */
 }
 @-moz-keyframes slider {
 	0%, 17%, 100%	{ left: 0 }
@@ -102,10 +102,10 @@ figure { /* jkdcadskfdnsfn */
 #slideshow .slider {
 	position: absolute;
 	left:0; top:0;
-	width: 500%;
+	width: 500%; /* creates total width of slider to be 5 times bigger */
 	height: 280px;
 	
-	-webkit-animation: slider 25s infinite; /* jkdcadskfdnsfn */
+	-webkit-animation: slider 25s infinite; /* makes total duration of 5 sliding animtions 25 seconds with infinite loop */
 	-moz-animation: slider 25s infinite;
 	animation: slider 25s infinite;
 }
@@ -115,9 +115,9 @@ figure { /* jkdcadskfdnsfn */
 	padding:0; margin:0;
 }
 
-@-webkit-keyframes figurer { /* jkdcadskfdnsfn */
-	0%, 20%, 40%, 60%, 80%, 100%				{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
-	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%	{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; }
+@-webkit-keyframes figurer { /* defines a key frame called "figurer" with fade in and fade out like effects  */
+	0%, 20%, 40%, 60%, 80%, 100%				{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	} /* after the slide is in the view, fade in the box shadow  */
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%	{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; } /* before the slide is out of the view, fade out the box shadow  */
 }
 @-moz-keyframes figurer {
 	0%, 20%, 40%, 60%, 80%, 100%				{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
@@ -138,14 +138,14 @@ figure { /* jkdcadskfdnsfn */
 	-moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
 	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
 	
-	-webkit-animation: figurer 25s infinite; /* jkdcadskfdnsfn */
+	-webkit-animation: figurer 25s infinite; /* makes boxing shadow, fade in and out infinite */
 	-moz-animation: figurer 25s infinite;
 	animation: figurer 25s infinite;
 }
 
-@-webkit-keyframes figcaptionner { /* jkdcadskfdnsfn */
-	0%, 20%, 40%, 60%, 80%, 100%					{ bottom: -55px;} /* jkdcadskfdnsfn */
-	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%	{ bottom: 5px;} /* jkdcadskfdnsfn */
+@-webkit-keyframes figcaptionner { /* defines a key frame called "figcaptionner" with transition in and out effects  */
+	0%, 20%, 40%, 60%, 80%, 100%					{ bottom: -55px;} /*  before the slide is out the view, transition out the caption  */
+	5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95%	{ bottom: 5px;} /* after the slide is in the view, transition in the caption */
 }
 @-moz-keyframes figcaptionner {
 	0%, 20%, 40%, 60%, 80%, 100%					{ bottom: -55px;}
@@ -168,9 +168,9 @@ figure { /* jkdcadskfdnsfn */
 	background: rgba(255,255,255,0.7);
 	border-top: 1px solid rgb(225,225,225);
 	color: #111; 
-	text-shadow: -1px -1px 0 rgba(255,255,255,0.3); /* jkdcadskfdnsfn */
+	text-shadow: -1px -1px 0 rgba(255,255,255,0.3); /* add shadow to text */
 	
-	-webkit-animation: figcaptionner 25s infinite; /* jkdcadskfdnsfn */
+	-webkit-animation: figcaptionner 25s infinite; /* apply the figcation element with the defined "figcaptionner" animation in an infinite loop */
 	-moz-animation: figcaptionner 25s infinite;
 	animation: figcaptionner 25s infinite;
 }
