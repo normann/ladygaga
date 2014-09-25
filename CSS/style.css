@@ -1,57 +1,57 @@
 
-body {
-	background:url(../images/background.jpg);
-	background-repeat: repeat-x;
+body { /* body style for css */
+	background:url(../images/background.jpg); /* link to background image */
+	background-repeat: repeat-x; /* repeat background horizontally */
 }
 
-#container{
-	width:960px;
-	margin:auto;
-	padding: 20px 0;
+#container{ /* container style relevant to html tags */
+	width:960px; /* sets width to 960 px */
+	margin:auto; /* sets position to automatically centered */
+	padding: 20px 0; /* container is 20 px padding from top and bottom but 0 for right and left */
 }
 
-	.toplevel-block{
+	.toplevel-block{ /* style relevant to its class id i.e div id ="nav" */
 		width:900px;
 		margin:auto;
 	}
 
 #header{
-	height:150px;
+	height:150px; /* sets height to 150 px */
 	background:url(../images/header.jpg);
 }
 
 #nav{
-	display: table;
-	background:url("../images/chain navigation background.jpg");
+	display: table; /* display like a table element */
+	background:url("../images/chain navigation background.jpg"); /* link to navigation background */
 }
 
-	#nav ul{
-		display: table-row;
+	#nav ul{ /* styling for nav unordered list */
+		display: table-row; /* to make the element behave like a table row (across) */
 	}
-		#nav ul li {
-			display: table-cell;
+		#nav ul li { /* styling for nav individual lists */
+			display: table-cell; /* to make element behave like a table cell (distributed evenly) */
 		}
 
-		#nav ul li.left a div{
+		#nav ul li.left a div{ /* position automatically left of nav box */
 
 		}
 		#nav ul li.center a div{
-			margin: auto;
+			margin: auto; /* center image */
 		}
 		#nav ul li.right a div{
-			float: right;
+			float: right; /* make image float to the right */
 		}
 				#nav ul li a div{
 					width: 225px;
 					height: 100px;
 				}
 
-				#nav ul li a:hover div, #nav ul li a:focus div{
-					background-position: 0 -100px;
+				#nav ul li a:hover div, #nav ul li a:focus div{ /* when hovered over move image up 100 px */
+					background-position: 0 -100px; /* moves image up 100 px */
 				}
 
 				#education a div{
-					background:url("../images/hover over education.gif");
+					background:url("../images/hover over education.gif"); /* link to navigation image (gif) */
 				}
 
 				#biography a div{
@@ -83,7 +83,7 @@ body {
 	height:50px;
 	width:350px;
 	margin:auto;
-	position: relative;
+	position: relative; /* alows image to be moved freely by 14 px */
 	top: 14px;
 }
 
@@ -91,48 +91,48 @@ body {
 	height:100px;
 	background:url(../images/footer.jpg);
 }
-	#footer-wrapper{
+	#footer-wrapper{ /* makes all footer elements padding top 15 px */
 		padding-top:15px;
 	}
 
 		#footer ul li{
-			display:inline-block;
+			display:inline-block; /* makes unordered list behave like both inline and block elemnents */
 			padding-top:5px;
 			padding-left:3px;
 			margin:5px 30px 0px 35px;
 		}
 
 			#footer ul li a{
-				color: #FFFFFF;
+				color: #FFFFFF;/* sets color to white */
 			}
 
-			#footer ul li a:hover{
-				color:#0066CC;
+			#footer ul li a:hover{ /* when hovered sets color to blue */
+				color:#0066CC; /* shade of blue */
 			}
 
 
-/*=========Home page style ============*/
+/*=========Home page style ============*/ /* to indicate home page individual styling */
 #home-sub-nav{
-	padding: 0 60px;
-	margin:30px 0 20px;
+	padding: 0 60px; /* padding 0 px top and bottom but 60 px right and left */
+	margin:30px 0 20px; /* adds 30 px margin to top. adds 0 px to left anf right. adds 20 px to bottom */
 }
 
 	#home-sub-nav li{
-		width:32%;
+		width:32%; /* sets width to 32 percent relevent to its containers width*/
 		display:inline-block;
-		vertical-align: top;
-		text-align: center;
-		position: relative;
+		vertical-align: top; /* sets word text automatically to top */
+		text-align: center; /* automatically centers text */
+		position: relative; /* makes position relative to position absolute */
 	}
 
 		#home-sub-nav li h3{
 			padding: 10px 0;
 			margin: 0 5px;
-			border: 1px solid black;
-			border-color: #222;
-			-webkit-border-top-left-radius: 10px;
-			-moz-border-top-left-radius: 10px;
-			border-top-left-radius: 10px;
+			border: 1px solid black; /* adds 1 px border */
+			border-color: #222; /* adds dark grey background color to home sub nav */
+			-webkit-border-top-left-radius: 10px; /* fallback for top left radius (10 px) for old chrome and safari */
+			-moz-border-top-left-radius: 10px; /* fallback for top left radius (10px) for old firefox */
+			border-top-left-radius: 10px; /* fallback for top left for old browsers (10 px) */
 			-webkit-border-top-right-radius: 10px;
 			-moz-border-top-right-radius: 10px;
 			border-top-right-radius: 10px;
@@ -140,7 +140,7 @@ body {
 
 		#home-sub-nav li div{
 			background-color:#222;
-			color: #fff;
+			color: #fff; /* standard color is white when hovered over */
 			padding: 10px 10px;
 			margin: 0 5px;
 			border-color: #222;
@@ -151,22 +151,22 @@ body {
 			-moz-border-bottom-right-radius: 10px;
 			border-bottom-right-radius: 10px;
 			height: 252px;
-			overflow: hidden;
-			position: absolute;
+			overflow: hidden; /* excess text is hidden */
+			position: absolute; /* makes position relative to its container */
 			top: 155px;
-			opacity: 0;
-			visibility: hidden;
-			-webkit-transition: all 1s ease;
+			opacity: 0; /*  */
+			visibility: hidden; /* hides text and colors when not hovered over */
+			-webkit-transition: all 1s ease; /* fallback for safari and chrome for transition of revealing text and colors for 1 second smoothly */
 		    -moz-transition: all 1s ease;
 		    -ms-transition: all 1s ease;
 		    -o-transition: all 1s ease;
 		    transition: all 1s ease;
-		    line-height: 20px;
-		    font-size: 20px;
+		    line-height: 20px; /* line height is 20 px */
+		    font-size: 20px; /* font size of text is 20 px */
 		}
 
 		#home-sub-nav li h3:hover, #home-sub-nav li h3:focus{
-			cursor: pointer;
+			cursor: pointer; /* when hovered over, show mouse is cursor */
 			background-color: #222;
 			color:#FFF;
 		}
@@ -174,10 +174,10 @@ body {
 		#home-sub-nav li h3:hover + div, #home-sub-nav li h3:focus + div{
 			opacity: 1;
 			top: 44px;
-			visibility: visible;
+			visibility: visible; /* when hovered over, show home sub nav styles */
 		}
 
-/*=========Home page style end============*/
+/*=========Home page style end============*/ /* indicates end of individual home page styling */
 
 /*=========Blog page style============*/
 	#blog_text {
@@ -200,8 +200,8 @@ body {
 			display: none;
 			color: #fff;
 			padding: 25px;
-			overflow-y: hidden;
-			max-height: 245px;
+			overflow-y: hidden; /* shows vertical excess text is hidden */
+			max-height: 245px; /* sets max height to 245 px */
 			text-align: center;
 			line-height: 18px;
 		    font-size: 16px;
@@ -232,10 +232,6 @@ body {
 		}
 
 /*=========Blog page style end============*/
-
-/*=========Biography page style============*/
-
-/*=========Biography page style end============*/
 
 #biography_text {
 	padding: 20px 50px;

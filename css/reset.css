@@ -1,3 +1,4 @@
+/* this style sheet is to reset some elements style unified across different browsers */
 ul, menu, dir {
 	display: block;
 	list-style-type: none;
