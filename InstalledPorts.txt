@@ -1,2 +1,2 @@
-sudo ports install php72 
-sudo ports install php72-apache2handler php72-cgi php72-curl php72-gd php72-gettext php72-iconv php72-imap php72-intl php72-mbstring php72-mcrypt php72-mysql php72-opcache php72-openssl php72-sockets php72-sqlite php72-tidy php72-xmlrpc php72-xsl php72-zip
+sudo port install php71 
+sudo port install php71-apache2handler php71-cgi php71-curl php71-gd php71-gettext php71-iconv php71-imap php71-intl php71-mbstring php71-mcrypt php71-mysql php71-opcache php71-openssl php71-sockets php71-sqlite php71-tidy php71-xmlrpc php71-xsl php71-zip
