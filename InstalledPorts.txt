@@ -1,20 +1,2 @@
-php72
-php72-apache2handler
-php72-cgi
-php72-curl
-php72-gd
-php72-gettext
-php72-iconv
-php72-imap
-php72-intl
-php72-mbstring
-php72-mcrypt
-php72-mysql
-php72-opcache
-php72-openssl
-php72-sockets
-php72-sqlite
-php72-tidy
-php72-xmlrpc
-php72-xsl
-php72-zip
+sudo ports install php72 
+sudo ports install php72-apache2handler php72-cgi php72-curl php72-gd php72-gettext php72-iconv php72-imap php72-intl php72-mbstring php72-mcrypt php72-mysql php72-opcache php72-openssl php72-sockets php72-sqlite php72-tidy php72-xmlrpc php72-xsl php72-zip
