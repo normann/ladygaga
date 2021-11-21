@@ -21,8 +21,8 @@ function wrap(string $string, int $length): ?string
         return null;
     }
 
-    // We use hard-coded newline feed '\n', to avoid put '\n' in lots of places, we here assign it to a variable
-    $newLine = '\n';
+    // We use hard-coded newline feed "\n", to avoid put "\n" in lots of places, we here assign it to a variable
+    $newLine = "\n";
 
     $lineLength = 0;
 
